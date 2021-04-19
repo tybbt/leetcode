@@ -1,4 +1,3 @@
-a = 's'
-b = a.split()
-print(b)
-
+a = 0
+b = 1
+print(a and b, a or b)
