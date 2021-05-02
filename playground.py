@@ -1,6 +1,15 @@
-a = 0
-b = 1
-print(8%2)
+a = [[1, 3, 5], [3, 4], [1, 4], [2], [3, 4], [1, 4, 5]]
+from collections import defaultdict
+di = defaultdict(int)
+for n in a:
+    for j in n:
+        di[j] += 1
+maxx = 0
+for j in di.values():
+    if j > maxx:
+        maxx = j
+print(maxx)
+
 '''
 动态规划 背包问题
 解题思路
